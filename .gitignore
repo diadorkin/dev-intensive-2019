@@ -3,6 +3,7 @@
 
 # User-specific configurations
 *.iml
+/.vscode/
 
 # OS-specific files
 .DS_Store
