@@ -1,8 +1,11 @@
+#Th1zaR
+
 # Gradle files
 .gradle/
 
 # User-specific configurations
 *.iml
+/.vscode/
 
 # OS-specific files
 .DS_Store
