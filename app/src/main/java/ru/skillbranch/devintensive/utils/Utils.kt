@@ -3,10 +3,10 @@ package ru.skillbranch.devintensive.utils
 object Utils {
     fun parseFullName(fullName: String?): Pair<String?, String?> {
         var f = "${if (fullName?.trim().isNullOrEmpty()) null else fullName}"
-        val parts: List<String>? = f?.trim()?.split(" ")
+        val parts: List<String>? = f?.trim()?.split(" ").filter { !it.isNullOrEmpty() }
 
-        var firstName = parts?.getOrNull(0)
-        var lastName = parts?.getOrNull(1)
+        var firstName = parts?.getOrNull(0)?.trim()
+        var lastName = parts?.getOrNull(1)?.trim()
         return firstName to lastName
     }
 
